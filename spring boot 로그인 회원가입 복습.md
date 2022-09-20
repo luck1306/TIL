@@ -69,6 +69,8 @@ class의 이름은 상관 없지만 SecurityConfigAdapter를 상속받고 만든
 
 ### 로그인 기능
 
+*UserDetailsService*
+
 - 아이디와 비밀번호를 입력받는다.
 - 입력받은 값을 기반으로 UsernamePasswordAuthentication 객체를 만든다.
 - authenticationManagerBuilder의 authenticate method를 사용해 사용자의 비밀번호를 검증한다.\
@@ -87,3 +89,17 @@ class의 이름은 상관 없지만 SecurityConfigAdapter를 상속받고 만든
 - 그 후 인증된 객체를 바탕으로 token을 생성한다.
 - refresh token을 저장한다.
 - 마지막으로 token을 반환하면 로그인 로직은 끝난다.
+
+### 토큰 재발급
+
+- 받아온 refresh token의 유효성 검사
+- refresh token이 유효하다면 access token에서 entity의 기본 키를 가져온다.
+- refresh token repository에서 access token에서 가져온 entity의 기본 키를 기반으로 repository token 값을 가져온다.
+- 받아온 refresh token과 refresh token repositoty에서 받아온 refresh token이 같은지 비교한다.
+- generateToken method를 사용해서 새로 토큰을 발급받고 토큰을 반환한다.
+
+### 로그아웃
+
+- SecurityContextHolder에서 Authentication을 가져와서 getName method로 entity의 식별자를 받아온다 (예시 : 기본 키, account id, email, name 등등)
+- refresh token repository에서 entity의 식별자로 refresh token을 찾는다.
+- 찾은 refrsh token을 refresh token repositort에서 지운다.
