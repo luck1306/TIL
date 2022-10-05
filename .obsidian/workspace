@@ -1,0 +1,133 @@
+{
+  "main": {
+    "id": "1536b92ff2e3eaf5",
+    "type": "split",
+    "children": [
+      {
+        "id": "1505b7e0db302419",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "프로젝트 중 알아낸 주전부리.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6faf118890891127",
+    "type": "split",
+    "children": [
+      {
+        "id": "b1060a19382f74c4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9668b13e8c7a73af",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "b6dbac253755d30a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "09ffb3fb64e5fc68",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "05db791787272ef3",
+    "type": "split",
+    "children": [
+      {
+        "id": "c8f1cb367bb051ea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6f2d5fc6aaf35734",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "프로젝트 중 알아낸 주전부리.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "dd5fed546aa63abe",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "프로젝트 중 알아낸 주전부리.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "82d476da43c8d05c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "0acecbff5062f4bf",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "프로젝트 중 알아낸 주전부리.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "1505b7e0db302419",
+  "lastOpenFiles": []
+}

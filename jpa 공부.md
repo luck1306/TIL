@@ -28,3 +28,4 @@
 @CreateDate
 @LastModifiedDate
 @EntityListeners
+@PreAuthorize
