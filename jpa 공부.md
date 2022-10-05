@@ -16,16 +16,68 @@
     **자세한 내용 : https://taetaetae.github.io/2016/10/08/20161008/**\
     - readOnly : transaction을 읽기 전용으로 설정
 
-@DynamicInsert
-@TimeToLive
-@QueryProjection
-@MapsId
-@ColumnDefault
-@Digits
-@Transient
-@MappedSuperClass
-@Indexed
-@CreateDate
-@LastModifiedDate
-@EntityListeners
-@PreAuthorize
+@DynamicInsert : hibernate (나중에 공부)
+
+
+@TimeToLive : redis
+
+### @QueryProjection 
+프로젝션은 select 절에 대상을 지정하는 것이다. (테이블에서 원하는 column만 뽑아서 조회하는 것)
+_프로젝션이 하나일 때는 대상의 타입으로 반환되지만 복수의 프로젝션은  dto로 변환될 수 있다._
+__sql (π)__ 
+```java
+@Entity
+public class Member() {
+	@Id
+	private Long id;
+	private String name;
+	private int age;
+}
+
+
+@Data
+public class MemberDto {
+    private String name;
+    private int age;
+    
+    pulbic MemberDto() {}
+    @QueryProjection
+    public MemberDto(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+public void findDtoByQueryProjection() {
+	queryFactory
+		.select(new QMemberDto(member.name, member.age))
+		.from(member)
+		.fetch();
+}
+```
+- dto의 생성자에 @QueryProjection annotation을 추가한다
+- 기존의 dto를 기반으로 만들어진 qdto는 모든 layer에서 사용될 수 있으며 사용하는 것으로 querydsl에 의존적이게 됩니다.
+- 사용 방법은 위의 findDtoByQueryProjection과 같이 사용합니다.
+
+
+@MapsId : foreign key를 primary key로 사용할 때 사용
+
+
+@ColumnDefault : 추가한 column에 기본 값을 설정한다.
+
+
+@Digits : https://javacan.tistory.com/entry/Bean-Validation-2-Spring-5-valiidatiion (잘 모르겠다)
+
+
+@Transient : https://gmoon92.github.io/jpa/2019/09/29/what-is-the-transient-annotation-used-for-in-jpa.html (정리 잘 됨)
+
+
+@Indexed : (잘 모르겠다)
+
+*refrence : https://wildeveloperetrain.tistory.com/76*
+- @CreateDate : 생성된 시간 정보
+- @MappedSuperClass : 반복되는 매핑정보( (예시) : id, name, createAt ...)를 부모클래스에 두고 속성만 상속하고 싶을 때 부모클래스에 추가하는 annotation
+- @LastModifiedDate : 마지막으로 수정된 시간 정보
+- @EntityListeners : jpa의 이벤트 발생 시 특정 로직을 실행시킬 수 있는 anntation
+
+@PreAuthorize : (잘 모르겠다)
