@@ -29,3 +29,34 @@ _Redis Command Collection_
 ### flushall vs flushdb
 - flushall은 모든 DB의 모든 데이터 삭제
 - flushdb는 현재 DB의 모든 데이터 삭제
+
+
+### Spring Boot Redis Configure
+_Redis Dependency_
+```java
+implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+```
+
+_Redis yml config_
+```yml
+spring:
+	redis:
+		host: localhost
+		port: 6379
+```
+---
+RedisConnectionFactory
+LettureConnectionFactory
+RedisTemplate
+RedisTemplate.set(Key/Value)Serializer() <- method
+RedisTemplate.setConnectionFactory() <- method
+redisConnectionFactory
+ValueOperations
+RedisTemplate.opsForValue() <- method
+
+~~@PostConsturct ~~(기각 : bean 생성주기 기타등등 공부하고 오자)
+- DI가 이루어진 후에 초기화를 수행함
+- 다른 리소스에서 호출되지 않는다 해도 수행됨
+- _쓰는이유_
+
+@ConditionalOnMissingBean

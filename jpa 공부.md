@@ -16,6 +16,17 @@
     **자세한 내용 : https://taetaetae.github.io/2016/10/08/20161008/**\
     - readOnly : transaction을 읽기 전용으로 설정
 
+### Enumerated
+- EnumType.ORDINAL : enum에 정리된 순서대로 데이터베이스에 값이 저장됨
+	- 예시 : enum이 아래와 같을 때 ADMIN은 0, USER는 1로 저장됨
+```java
+public enum ROLE() {
+	ADMIN, USER
+}
+```
+- EnumType.STRING : enum이름 그대로 데이터베이스에 저장됨
+	- 예시 : enum이 위와 같을 때 ADMIN은 "ADMIN", USER는 "USER"로 저장된다.
+
 @DynamicInsert : hibernate (나중에 공부)
 
 
@@ -69,15 +80,17 @@ public void findDtoByQueryProjection() {
 @Digits : https://javacan.tistory.com/entry/Bean-Validation-2-Spring-5-valiidatiion (잘 모르겠다)
 
 
-@Transient : https://gmoon92.github.io/jpa/2019/09/29/what-is-the-transient-annotation-used-for-in-jpa.html (정리 잘 됨)
+@Transient : https://gmoon92.github.io/jpa/2019/09/29/what-is-the-transient-annotation-used-for-in-jpa.html (정리 잘 됨) (객체에 임시로 어떤 값을 보관하고 싶을 때 사용)
 
 
 @Indexed : (잘 모르겠다)
+
 
 *refrence : https://wildeveloperetrain.tistory.com/76*
 - @CreateDate : 생성된 시간 정보
 - @MappedSuperClass : 반복되는 매핑정보( (예시) : id, name, createAt ...)를 부모클래스에 두고 속성만 상속하고 싶을 때 부모클래스에 추가하는 annotation
 - @LastModifiedDate : 마지막으로 수정된 시간 정보
 - @EntityListeners : jpa의 이벤트 발생 시 특정 로직을 실행시킬 수 있는 anntation
+
 
 @PreAuthorize : (잘 모르겠다)
