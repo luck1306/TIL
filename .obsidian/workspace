@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "자바 ORM 표준 JPA  프로그래밍(공부)/04_엔티티 매핑.md",
+            "file": "자바 ORM 표준 JPA  프로그래밍(공부)/06_다양한 연관관계 매핑.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "자바 ORM 표준 JPA  프로그래밍(공부)/04_엔티티 매핑.md",
+                "file": "자바 ORM 표준 JPA  프로그래밍(공부)/06_다양한 연관관계 매핑.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "자바 ORM 표준 JPA  프로그래밍(공부)/04_엔티티 매핑.md",
+                "file": "자바 ORM 표준 JPA  프로그래밍(공부)/06_다양한 연관관계 매핑.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "자바 ORM 표준 JPA  프로그래밍(공부)/04_엔티티 매핑.md"
+                "file": "자바 ORM 표준 JPA  프로그래밍(공부)/06_다양한 연관관계 매핑.md"
               }
             }
           }
@@ -130,13 +130,15 @@
   },
   "active": "1505b7e0db302419",
   "lastOpenFiles": [
+    "자바 ORM 표준 JPA  프로그래밍(공부)/04_엔티티 매핑.md",
+    "자바 ORM 표준 JPA  프로그래밍(공부)/05_연관관계 매핑 기초.md",
+    "자바 ORM 표준 JPA  프로그래밍(공부)/06_다양한 연관관계 매핑.md",
     "Redis 공부.md",
     "jpa 공부.md",
     "jpql 공부.md",
     "README.md",
     "ResponseEntity, Optional.md",
     "spring boot 로그인 회원가입 복습.md",
-    "unity c# - 캐릭터 이동하기.md",
-    "프로젝트 중 알아낸 주전부리.md"
+    "unity c# - 캐릭터 이동하기.md"
   ]
 }
