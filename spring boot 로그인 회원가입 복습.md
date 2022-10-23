@@ -1,8 +1,8 @@
 # Spring Boot 로그인 & 회원가입 복습
 
 ### 매 요청마다 실행되는 로직
-spring boot application을 가동하면 여러 요청을 받을 수 있다.\
-하지만 바로 요청을 받는 것이 아닌 여러 단계에 걸쳐 요청을 받을 수 있는데\
+spring boot application을 가동하면 여러 요청을 받을 수 있다.
+하지만 바로 요청을 받는 것이 아닌 여러 단계에 걸쳐 요청을 받을 수 있는데
 그 중 Filter라는 것도 거쳐 지나가게 된다.
 
 로그인 회원가입을 하기 위한 Filter를 만들 때 매 요청마다 거치는 Filter를 만들 것이다.
@@ -44,13 +44,13 @@ public class JwtFilter extends OncePerRequestFilter {
     }
 }
 ```
-위 코드중 doFilterInternal method는 매 요청마다 실행되게 될 것이다.\
-위 코드를 간단히 설명하면 로그인 되었을 시 매 요청마다 header에 token을 보내는데\
+위 코드중 doFilterInternal method는 매 요청마다 실행되게 될 것이다.
+위 코드를 간단히 설명하면 로그인 되었을 시 매 요청마다 header에 token을 보내는데
 그 토큰을 SecurityContext라는 곳에 저장하기 위한 Filter이다.
 
 이 클래스를 적용시켜 실제 매 요청 마다 SecurityContext에 정보를 저장하기 위해서는 WebSecurityConfigurerAdapter라는 class를 상속받은 SecurityConfig class에 명시적으로 적용을 해줘야 한다.
 
-하지만 SecurityConfig에서 바로 Filter를 설정할 수 있는 것이 아니라 Filter를 등록할 수 있게 하는 또 다른 설정 class가 있어야 한다.\
+하지만 SecurityConfig에서 바로 Filter를 설정할 수 있는 것이 아니라 Filter를 등록할 수 있게 하는 또 다른 설정 class가 있어야 한다.
 class의 이름은 상관 없지만 SecurityConfigAdapter를 상속받고 만든 Filter를 UsernamePasswordAuthenticationFilter 앞에 등록시키는 기능이 있게 만든다.
 
 **여기 까지가 특수한 기능이 아닌 요청 마다 확인해야 하는 기능에 관해 기술하였다.**
@@ -73,7 +73,7 @@ class의 이름은 상관 없지만 SecurityConfigAdapter를 상속받고 만든
 
 - 아이디와 비밀번호를 입력받는다.
 - 입력받은 값을 기반으로 UsernamePasswordAuthentication 객체를 만든다.
-- authenticationManagerBuilder의 authenticate method를 사용해 사용자의 비밀번호를 검증한다.\
+- authenticationManagerBuilder의 authenticate method를 사용해 사용자의 비밀번호를 검증한다.
 검증과정
     - 우선 UserDetailsService를 구현한 CustomUserDetailsService를 만든다
     - loadUserByUsername을 Override 한다.
@@ -83,8 +83,8 @@ class의 이름은 상관 없지만 SecurityConfigAdapter를 상속받고 만든
     - additionalAuthenticationChecks method는 입력받은 password와 UserDetails에 저장된 password를 비교하는 method이고 retrieveUser는 username에 맞는 객체를 찾고 UserDetails로 반환한다.
     - AbstractUserDetailsAuthenticationProvider의 authentication은 인터페이스인 AuthenticationProvider에서 호출된다.
     - ProviderManger의 authenticate method에서 AuthenticationProvider의 authenticate가 호출된다.
-    - 마지막으로 ProviderManger가 구현하는 인터페이스는 AuthenticationManger다.\
-**정리**\
+    - 마지막으로 ProviderManger가 구현하는 인터페이스는 AuthenticationManger다.
+**정리**
 **로그인 로직에 있는 autheticationMangerBuild에 authenticate method를 사용할 때 ProviderManger->AuthenicationProvider->AbstractUserDetailsAuthenticationProvider->retrieveUser(method : DaoAuthenticationProvider), additionalAuthenticationChecks(method : DaoAuthenticationProvider)의 로직을 수행하고 그 중 UserDetailsService의 loadUserByUsername method를 사용하기 때문에 authenticationMangerBuild를 사용하는 로그인 로직에서는 UserDetailsService의 loadUserByUsername을 반드시 구현해야 한다.**
 - 그 후 인증된 객체를 바탕으로 token을 생성한다.
 - refresh token을 저장한다.
