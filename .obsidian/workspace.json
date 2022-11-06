@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "@EqualsAndHashCode.md",
+                "file": "자바 ORM 표준 JPA  프로그래밍(공부)/04_엔티티 매핑.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "@EqualsAndHashCode.md",
+                "file": "자바 ORM 표준 JPA  프로그래밍(공부)/04_엔티티 매핑.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "@EqualsAndHashCode.md",
+                "file": "자바 ORM 표준 JPA  프로그래밍(공부)/04_엔티티 매핑.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "@EqualsAndHashCode.md"
+                "file": "자바 ORM 표준 JPA  프로그래밍(공부)/04_엔티티 매핑.md"
               }
             }
           }
@@ -136,20 +136,17 @@
     "width": 300,
     "collapsed": true
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
   "active": "1505b7e0db302419",
   "lastOpenFiles": [
-    "@NoArgsConstructor.md",
+    "자바 ORM 표준 JPA  프로그래밍(공부)/05_연관관계 매핑 기초.md",
+    "자바 ORM 표준 JPA  프로그래밍(공부)/04_엔티티 매핑.md",
+    "자바 ORM 표준 JPA  프로그래밍(공부)/07_고급 매핑.md",
+    "자바 ORM 표준 JPA  프로그래밍(공부)/06_다양한 연관관계 매핑.md",
     "@EqualsAndHashCode.md",
+    "@NoArgsConstructor.md",
     "프로젝트 중 알아낸 주전부리.md",
     "예외 핸들링.md",
     "팀 프로젝트(photo diary).md",
-    "java abstract class, interface.md",
-    "jpa 공부.md",
-    "jpql 공부.md",
-    "README.md",
-    "Redis 공부.md"
+    "java abstract class, interface.md"
   ]
 }
