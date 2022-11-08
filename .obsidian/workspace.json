@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "자바 ORM 표준 JPA  프로그래밍(공부)/04_엔티티 매핑.md",
+                "file": "예외 핸들링.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "자바 ORM 표준 JPA  프로그래밍(공부)/04_엔티티 매핑.md",
+                "file": "예외 핸들링.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "자바 ORM 표준 JPA  프로그래밍(공부)/04_엔티티 매핑.md",
+                "file": "예외 핸들링.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "자바 ORM 표준 JPA  프로그래밍(공부)/04_엔티티 매핑.md"
+                "file": "예외 핸들링.md"
               }
             }
           }
@@ -138,8 +138,8 @@
   },
   "active": "1505b7e0db302419",
   "lastOpenFiles": [
-    "자바 ORM 표준 JPA  프로그래밍(공부)/05_연관관계 매핑 기초.md",
     "자바 ORM 표준 JPA  프로그래밍(공부)/04_엔티티 매핑.md",
+    "자바 ORM 표준 JPA  프로그래밍(공부)/05_연관관계 매핑 기초.md",
     "자바 ORM 표준 JPA  프로그래밍(공부)/07_고급 매핑.md",
     "자바 ORM 표준 JPA  프로그래밍(공부)/06_다양한 연관관계 매핑.md",
     "@EqualsAndHashCode.md",
