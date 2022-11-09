@@ -1,5 +1,9 @@
 # Redis
 
+cmd 관리자 권한 : redis-server
+cmd : redis-cli
+
+
 _Redis Command Collection_
 
 |명령어|설명|종류|
