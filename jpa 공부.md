@@ -94,3 +94,9 @@ public void findDtoByQueryProjection() {
 
 
 @PreAuthorize : (잘 모르겠다)
+
+__Jpa Repository method 선언 방법__
+- findBy : By 뒤의 조건으로 검색된 결과 하나를 반환함
+- findAllBy : By 뒤의 조건으로 검색된 결과 __모두__ 반환함
+	_By뒤에 Entity의 속성을 넣습니다(그 속성으로 원하는 튜플을 찾기 위해서)_ 
+	- And : 속성을 추가할 때 사용합니다.
