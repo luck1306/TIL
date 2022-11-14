@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ResponseEntity, Optional.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "de493bcac6fbc167",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "stream.md",
+                "file": "Redis 공부.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "stream.md",
+                "file": "Redis 공부.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "stream.md",
+                "file": "Redis 공부.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "stream.md"
+                "file": "Redis 공부.md"
               }
             }
           }
@@ -149,8 +136,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "de493bcac6fbc167",
+  "active": "1505b7e0db302419",
   "lastOpenFiles": [
+    "stream.md",
+    "Redis 공부.md",
     "ResponseEntity, Optional.md",
     "jpa 공부.md",
     "예외 핸들링.md",
@@ -158,8 +147,6 @@
     "자바 ORM 표준 JPA  프로그래밍(공부)/07_고급 매핑.md",
     "프로젝트 중 알아낸 주전부리.md",
     "java abstract class, interface.md",
-    "팀 프로젝트(photo diary).md",
-    "@EqualsAndHashCode.md",
-    "자바 ORM 표준 JPA  프로그래밍(공부)/06_다양한 연관관계 매핑.md"
+    "팀 프로젝트(photo diary).md"
   ]
 }
