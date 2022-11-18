@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Redis 공부.md",
+                "file": "stream.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Redis 공부.md",
+                "file": "stream.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Redis 공부.md",
+                "file": "stream.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Redis 공부.md"
+                "file": "stream.md"
               }
             }
           }
@@ -138,15 +138,15 @@
   },
   "active": "1505b7e0db302419",
   "lastOpenFiles": [
-    "stream.md",
-    "Redis 공부.md",
-    "ResponseEntity, Optional.md",
-    "jpa 공부.md",
+    "java abstract class, interface.md",
     "예외 핸들링.md",
+    "팀 프로젝트(photo diary).md",
+    "jpa 공부.md",
+    "Redis 공부.md",
+    "stream.md",
+    "ResponseEntity, Optional.md",
     "@NoArgsConstructor.md",
     "자바 ORM 표준 JPA  프로그래밍(공부)/07_고급 매핑.md",
-    "프로젝트 중 알아낸 주전부리.md",
-    "java abstract class, interface.md",
-    "팀 프로젝트(photo diary).md"
+    "프로젝트 중 알아낸 주전부리.md"
   ]
 }
