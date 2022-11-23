@@ -11,8 +11,12 @@
             "id": "e43169a0dc34a330",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Web Application의 이해.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Web Application의 이해.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Web Application의 이해.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Web Application의 이해.md"
+              }
             }
           }
         ]
@@ -128,11 +136,11 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9668b13e8c7a73af",
+  "active": "e43169a0dc34a330",
   "lastOpenFiles": [
+    "무제파일.md",
     "Web Application의 이해.md",
     "stream.md",
-    "무제파일.md",
     "java abstract class, interface.md",
     "예외 핸들링.md",
     "팀 프로젝트(photo diary).md",
