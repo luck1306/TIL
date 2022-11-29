@@ -71,7 +71,8 @@ userName=cumulus
 ```java
 // servlet의 service method
 ServletInputStream inputStream = request.getInputStream(); 
-String messageBody = StreamUtils.copyToString(inputStream, StandardCharsets.UTF_8); System.out.println("messageBody = " + messageBody); response.getWriter().write("ok")
+String messageBody = StreamUtils.copyToString(inputStream, StandardCharsets.UTF_8); System.out.println("messageBody = " + messageBody); 
+response.getWriter().write("ok")
 ```
 - 단순 텍스트는 Http message body를 직접 읽을 수 있는 getInputStream() method를 통해 body 전체를 가져온다.
 - StreamUtils로 Http message Body를 StandardCharsets.UTF_8을 이용해 String type으로 변환함
@@ -82,7 +83,8 @@ messageBody = hello
 #### JSON
 ```java
 //serblet의 service method
-ServletInputStream inputStream = request.getInputStream(); String messageBody = StreamUtils.copyToString(inputStream, StandardCharsets.UTF_8); System.out.println("messageBody = " + messageBody); 
+ServletInputStream inputStream = request.getInputStream(); 
+String messageBody = StreamUtils.copyToString(inputStream, StandardCharsets.UTF_8); System.out.println("messageBody = " + messageBody); 
 //=================================
 HelloData helloData = objectMapper.readValue(messageBody, HelloData.class); System.out.println("helloData = " + helloData);
 
