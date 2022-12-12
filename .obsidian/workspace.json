@@ -151,15 +151,15 @@
   },
   "active": "eb5afc928488df4f",
   "lastOpenFiles": [
+    "Predicate.md",
+    "java abstract class, interface.md",
+    "jpa 공부.md",
     "Web Application의 이해.md",
+    "자바 정규식.md",
+    "함수형 인터페이스.md",
     "unity c# - 캐릭터 이동하기.md",
     "spring boot 로그인 회원가입 복습.md",
     "stream.md",
-    "servlet.md",
-    "ResponseEntity, Optional.md",
-    "Redis 공부.md",
-    "README.md",
-    "netty socket에 대해서.md",
-    "jpql 공부.md"
+    "servlet.md"
   ]
 }
