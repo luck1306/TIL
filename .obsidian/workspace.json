@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Annotation Cache.md",
+                "file": "정보보안.md",
                 "mode": "source",
                 "source": false
               }
@@ -149,10 +149,20 @@
     "width": 300,
     "collapsed": true
   },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
   "active": "6679170c919e99ae",
   "lastOpenFiles": [
-    "Annotation Cache.md",
     "정보보안.md",
+    "Annotation Cache.md",
     "Redis 공부.md",
     "java abstract class, interface.md",
     "자바 정규식.md",

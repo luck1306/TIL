@@ -124,13 +124,24 @@ redis 자료 구조 별 redisTemplate method
 
 ```java
 @Getter
-@RedisHash
+@RedisHash("member")
 public class Member {
 	@Id
 	private String id;
-	
+	private String name;
+	private int age;
+
+	public Member(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
 }
 ```
+
+```java
+public interface MemberRepository extends CrudRepository<Member, String> {}
+```
+
 ---
 
 ~~@PostConsturct ~~(기각 : bean 생성주기 기타등등 공부하고 오자)
