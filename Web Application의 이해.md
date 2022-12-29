@@ -17,7 +17,7 @@ servlet
 
 서블릿 사용
 ```java
-@WebServlet(name = "helloWervlet", urlPattern = "/hello")
+@WebServlet(name = "helloServlet", urlPattern = "/hello")
 public class HelloServlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) {

@@ -11,7 +11,7 @@ __@WebServlet property 중복 금지__
 1. 스프링 부트 내부에 포함된 내장 톰캣이 가지고 있는 servlet containor로 서블릿을 생성&등록한다.
 2. Http Req, Http Res 
 ![[Pasted image 20221125022006.png]]
-	-  Http Request : 웹 브라우저에서 Http 요청 포맷을 만들어 서버에 요청
+	- Http Request : 웹 브라우저에서 Http 요청 포맷을 만들어 서버에 요청
 	- Http Response : 서버에서 로직이 끝나면 Http 응답 메시지를 만들어 웹 브라우저로 전달
 
 3. 웹 어플리케이션 서버의 요청 & 응답 구조
@@ -52,7 +52,9 @@ url의 query param에 데이터를 넣어 전달하는 방식
 예시) http://localhost:8080/a?userName=woonil&age=18&userName=cumulus
 _위의 query parameter에는 userName이 두 번 들어가는데 request.getParamgerValues() method를 사용해서 String 배열로 반환받을 수 있다._
 ```java
-System.out.println("[복수 파라미터 조회]"); String[] userNames = request.getParameterValues("userName"); for (String name : userNames) { System.out.println("userName="+name); }
+System.out.println("[복수 파라미터 조회]"); 
+String[] userNames = request.getParameterValues("userName"); 
+for (String name : userNames) { System.out.println("userName="+name); }
 ```
 실행 결과
 \[복수 피라미터 조회\]
@@ -63,7 +65,6 @@ userName=cumulus
 - content-type:application/x-www-form-urlencoded
 - 메시지 바디에 쿼리 파라미터 형식으로 데이터를 전달함
 - url query parameter와 같은 쿼리스트링 형태이기 때문에 request.getParameter() method로 추출가능하다
-- 
 
 ### Http message body에 데이터를 담아 요청
 
