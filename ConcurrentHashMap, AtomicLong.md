@@ -111,4 +111,13 @@ public class Hello {
 - Hashtable은 모두 동기 처리가 되어있어 multi-thread 환경에서 사용하기 적합하지만 속도가 너무 느리다.
 - Hashtable의 느린 속도를 개선한 클래스가 ConcurrentHashMap이다.
 	- Hashtable과 다르게 특정 블록만 동기 방식으로 처리한다
-- ConcurrentHashMap은 동시에 작업 가능한 쓰레드 수(DEFAULT_CONCURRENT_LEVEL)와 최대 버킷의 수(DEFAULT_CAPACITY)를 지정 가능한데 
+- ConcurrentHashMap은 동시에 작업 가능한 쓰레드 수(DEFAULT_CONCURRENT_LEVEL)와 최대 버킷의 수(DEFAULT_CAPACITY)를 지정 가능하다
+- 여러 쓰레드가 ConcurrentHashMap에 동시에 사용하더라도 다른 세그먼트면 lock을 얻기 위해 경쟁하지 않아도 된다.
+
+__HashMap에서는 load_factor가 total data count / capacity가 될 때 새 배열을 만들어 copy하지만, ConcurrentHashMap에서는 기존의 Node가 새로운 배열로 이동하는 형식을 취한다.___
+
+### Atomic Long
+- Long 자료형을 소유한 Wrapping class다
+- Thread-safe로 구현되어 있음
+- synchronized 없이 사용가능하다.
+- synchronized를 사용하는 것보다 적은 비용으로 동시성을 보장합니다.
