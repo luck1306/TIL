@@ -32,7 +32,7 @@ HttpServletResponse : Http 응답을 편리하게 사용가능하게 함
 1. 브라우저에서 특정경로로 요청한다.
 2. WAS는 Request, Response 객체를 새로 만들어 서블릿 객체를 서블릿 컨테이너에서 호출한다.
 3. 개발자는 각각 Request, Response 객체에서 Http 정보를 편리하게 작업한다.
-4. WAS는 Response 객체에서 Http응답 정보를 생성해 반환한다.
+4. WAS는 Response 객체에서 Http 응답 정보를 생성해 반환한다.
 
 서블릿 컨테이너 
 - 서블릿의 생명주기를 관리해준다. (tomcat, netty 등등)

@@ -5,7 +5,7 @@
 spring:
 	cache:
 		type: redis
-	redus:
+	redis:
 		host: {$HOST}
 		port: {$PORT}
 ```
