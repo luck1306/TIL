@@ -42,4 +42,4 @@ spring aop는 proxy객체를 만들어 aop를 구현하는데, aop를 만들기 
 - MethodInterceptor interface 구현으로 proxy 정의
 
 ![[Pasted image 20230904163532.png]]
-[example](./CGLIB.md)
+[example](CGLIB.md)

@@ -10,7 +10,7 @@
     - isolution : 격리 수준이라는 뜻을 가지고 있고, 일관성 없는 데이터를 허용하도록 하는 수준을 말한다.
         - DEFAULT : 기본, DB가 설정한 격리 수준 level을 따름
         - READ_UNCOMMITTED (level 0) : transaction에서 처리 중인, commit되지 않은 값을 다른 transaction이 읽는 것을 허용한다
-        - READ_COMMITTED : commit되지 않은 값을 사용하는 것을 금지한다.(transaction이 커밋된 값만 읽는다.)\
+        - READ_COMMITTED : commit되지 않은 값을 사용하는 것을 금지한다.(transaction이 커밋된 값만 읽는다.)
     **자세한 내용 : https://taetaetae.github.io/2016/10/08/20161008/**
     - progagation : transaction 동작 중 다른 transaction을 호출할 때 우선 순위를 설정하는 option
     **자세한 내용 : https://taetaetae.github.io/2016/10/08/20161008/**\
