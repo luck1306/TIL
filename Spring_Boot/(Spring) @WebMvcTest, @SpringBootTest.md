@@ -24,5 +24,5 @@ create 230906 16:24~ 18:00 (@WebMvcTest, @SpringBootTest @DataJpaTest 작성)
 
 ### @DataJpaTest
 
-[@DataJpaTest](./(JPA)_@OnDelete_@DataJpaTest.md)
+[@DataJpaTest]((JPA)_@OnDelete_@DataJpaTest.md)
 

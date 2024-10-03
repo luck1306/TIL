@@ -12,7 +12,7 @@ display : 요소를 화면에 어떤식으로 보여줄 지 지정함
 |inline-flex|"flex-container"의 크기가 내포하는 요소들의 값에 대해 container의 길이가 결정된다.(layout보다 주변의 요소와 어우러지기 위한 목적으로 사용됨)|
 
 __flex, inline-flex image__
-![](./img/flex_inline-flex.jpeg)
+![](flex_inline-flex.jpeg)
 <details>
 <summary>ref</summary>
 <div>

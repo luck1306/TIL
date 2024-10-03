@@ -32,7 +32,7 @@ spring aop는 proxy객체를 만들어 aop를 구현하는데, aop를 만들기 
 - runtime시 동적으로 타입을 분석하고 정보를 가져오는 reflection api를 사용하기에 사용시 성능 오버헤드가 발생한다.
 
 ![[Pasted image 20230904163449.png]]
-[example](./JDK_Dynamic_Proxy.md)
+[example](JDK_Dynamic_Proxy.md)
 
 ### CGLIB
 - interface를 구현하지 않은 객체에 AOP를 적용하기 위한 방법
