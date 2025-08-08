@@ -1,0 +1,1 @@
+settings(설정) -> "explorer.compactFolders" 검색 -> 비활성화

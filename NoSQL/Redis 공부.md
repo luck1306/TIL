@@ -111,6 +111,7 @@ System.out.println(valueOperations.get("key")); // dummy data
 ```
 
 redis 자료 구조 별 redisTemplate method
+
 |method|설명|
 |--|--|
 |opsForValue|Strings를 쉽게 Serialize / Deserialize 해주는 interface|
